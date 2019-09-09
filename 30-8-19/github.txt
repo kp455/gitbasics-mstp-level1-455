@@ -1,0 +1,280 @@
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop (master)
+$ cd --
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~
+$ cd Desktop
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop (master)
+$ cd gitbasics
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ touch sample.txt
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git init
+Initialized empty Git repository in C:/Users/r&d/Desktop/gitbasics/.git/
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git -a
+unknown option: -a
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git config user.name "kp455"
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git config user.mail "praveenakakarla1999@gmail.com"
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git remote add gitbasicshttps://github.com/kp455/git-basics
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git remote add gitbasics https://github.com/kp455/git-basics
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git remove -v
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git remote -v
+gitbasics       https://github.com/kp455/git-basics (fetch)
+gitbasics       https://github.com/kp455/git-basics (push)
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git add sample.txt
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sample.txt
+
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git commit -m
+error: switch `m' requires a value
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git git commit -m "checking"
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sample.txt
+
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git add sample.txt
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sample.txt
+
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git commit -m "checking"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'r&d@DESKTOP-MH3RCB9.(none)')
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ cd --
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~
+$ cd Desktop
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop (master)
+$ cd gitbasics
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ touch sample.txt
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ ls
+sample.txt
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/r&d/Desktop/gitbasics/.git/
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git -a
+unknown option: -a
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git config user.name "kp455"
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git config user.email "praveenakakarla1999@gmail.com"
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git remote add gitbasics https://github.com/kp455/git-basics
+fatal: remote gitbasics already exists.
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git remote -v
+gitbasics       https://github.com/kp455/git-basics (fetch)
+gitbasics       https://github.com/kp455/git-basics (push)
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sample.txt
+
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git add sample.txt
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sample.txt
+
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git commit -m "checking"
+[master (root-commit) 037acda] checking
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample.txt
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git log
+commit 037acdad37befc694a955b7172005d2530464c87 (HEAD -> master)
+Author: kp455 <praveenakakarla1999@gmail.com>
+Date:   Fri Aug 30 00:16:39 2019 -0700
+
+    checking
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git commit -m "checking"
+On branch master
+nothing to commit, working tree clean
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git log
+commit 037acdad37befc694a955b7172005d2530464c87 (HEAD -> master)
+Author: kp455 <praveenakakarla1999@gmail.com>
+Date:   Fri Aug 30 00:16:39 2019 -0700
+
+    checking
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git push -u gitbasics master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 213 bytes | 106.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kp455/git-basics
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'gitbasics'.
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+Your branch is up to date with 'gitbasics/master'.
+
+nothing to commit, working tree clean
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$ git pull gitbasics master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/kp455/git-basics
+ * branch            master     -> FETCH_HEAD
+   037acda..aea7077  master     -> gitbasics/master
+Updating 037acda..aea7077
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+r&d@DESKTOP-MH3RCB9 MINGW64 ~/Desktop/gitbasics (master)
+$
